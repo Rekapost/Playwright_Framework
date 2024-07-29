@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Open Cart Test Regression Playwright Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <test thread-count="2" parallel="tests" name="Open Cart Login Page Test(failed)" verbose="4">
+    <classes>
+      <class name="qa.opencart.tests.LoginPageTest">
+        <methods>
+          <include name="appLoginTest"/>
+          <include name="setup"/>
+          <include name="loginPageNavigationTest"/>
+          <include name="teatDown"/>
+          <include name="forgotPasswordLinkExistTest"/>
+        </methods>
+      </class> <!-- qa.opencart.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Open Cart Login Page Test(failed) -->
+  <test thread-count="2" parallel="tests" name="Open Cart Home Page Test(failed)" verbose="4">
+    <classes>
+      <class name="qa.opencart.tests.HomePageTest">
+        <methods>
+          <include name="homePageUrlTest"/>
+          <include name="setup"/>
+          <include name="teatDown"/>
+          <include name="searchTest"/>
+          <include name="homePageTitleTest"/>
+        </methods>
+      </class> <!-- qa.opencart.tests.HomePageTest -->
+    </classes>
+  </test> <!-- Open Cart Home Page Test(failed) -->
+</suite> <!-- Failed suite [Open Cart Test Regression Playwright Suite] -->

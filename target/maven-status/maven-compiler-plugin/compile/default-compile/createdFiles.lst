@@ -1,0 +1,5 @@
+qa\opencart\listeners\ExtentReportListener.class
+qa\opencart\pages\HomePage.class
+qa\opencart\constants\AppConstants.class
+qa\opencart\factory\PlaywrightFactory.class
+qa\opencart\pages\LoginPage.class
