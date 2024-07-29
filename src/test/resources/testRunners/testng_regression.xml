@@ -31,14 +31,14 @@
         </classes>
     </test>
 
-    <!-- Firefox Test (Local) -->
+    <!-- Firefox Test (Local) 
     <test name="Open Cart Login Page Test Firefox">
         <parameter name="browser" value="firefox" />
         <classes>
             <class name="qa.opencart.tests.HomePageTest" />
         </classes>
     </test>
-
+-->
     <!-- Edge Test -->
     <test name="Open Cart Home Page Test Edge">
         <parameter name="browser" value="edge" />
