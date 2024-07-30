@@ -41,3 +41,5 @@ pipeline {
         }  
     }
 }
+//https://youtu.be/lSArkaDKD2Q?si=MxHh4uJbNxBUdJ68
+// to first build developer unit test and then deploy to qa and then run regression test 
