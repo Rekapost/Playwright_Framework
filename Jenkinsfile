@@ -24,9 +24,7 @@ pipeline
                 }
             }
         }
-        
-        
-        
+      
         stage("Deploy to QA"){
             steps{
                 echo("deploy to qa")
@@ -36,28 +34,23 @@ pipeline
         stage('Regression Automation Test') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/naveenanimation20/Playwright-Java-PageObjectModel'
-                    sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_regressions.xml"
+                    git 'https://github.com/Rekapost/Playwright_Framework'
+                    sh "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testRunners/testng_regression.xml"
                     
                 }
             }
         }
-        
-        
+                
         stage('Publish Extent Report'){
             steps{
                      publishHTML([allowMissing: false,
                                   alwaysLinkToLastBuild: false, 
                                   keepAll: true, 
-                                  reportDir: 'build', 
+                                  reportDir: 'report', 
                                   reportFiles: 'TestExecutionReport.html', 
                                   reportName: 'HTML Extent Report', 
                                   reportTitles: ''])
             }
-        }
-        
-        
-        
-        
+        }  
     }
 }
