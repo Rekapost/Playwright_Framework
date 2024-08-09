@@ -6,32 +6,45 @@
 	<listeners>
 		<listener
 			class-name="qa.opencart.listeners.ExtentReportListener" />
-<!--	<listener
+		<!--	<listener
 			class-name="qa.opencart.listeners.TestAllureListener" />
 		<listener
 			class-name="qa.opencart.listeners.AnnotationTransformer" />
 -->
 	</listeners>
 
-<!-- IF U WANT TO RUN TESTS IN DIFFRENT BROWSER - CROSS BROWSER TESTING IN DOCKER SELENIUM GRID -->
-	
-	   <!-- Chrome Test -->
-    <test name="Open Cart Home Page Test Chrome">
-        <parameter name="browser" value="chrome" />
-        <classes>
-            <class name="qa.opencart.tests.HomePageTest" />
-        </classes>
-    </test>
+	<!-- IF U WANT TO RUN TESTS IN DIFFRENT BROWSER - CROSS BROWSER TESTING IN
+	DOCKER SELENIUM GRID -->
 
-    <!-- Chromium Test -->
-    <test name="Open Cart Login Page Test Chromium">
-        <parameter name="browser" value="chromium" />
-        <classes>
-            <class name="qa.opencart.tests.LoginPageTest" />
-        </classes>
-    </test>
+	<!-- Chrome Test -->
+	<test name="Open Cart Home Page Test Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="qa.opencart.tests.HomePageTest" />
+		</classes>
+	</test>
+	<test name="Open Cart Login Page Test Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="qa.opencart.tests.LoginPageTest" />
+		</classes>
+	</test>
+	<!-- Chromium Test -->
+	<test name="Open Cart Home Page Test Chromium">
+		<parameter name="browser" value="chromium" />
+		<classes>
+			<class name="qa.opencart.tests.HomePageTest" />
+		</classes>
+	</test>
+	<!-- Chromium Test -->
+	<test name="Open Cart Login Page Test Chromium">
+		<parameter name="browser" value="chromium" />
+		<classes>
+			<class name="qa.opencart.tests.LoginPageTest" />
+		</classes>
+	</test>
 
-    <!-- Firefox Test (Local) 
+	<!-- Firefox Test (Local) 
     <test name="Open Cart Login Page Test Firefox">
         <parameter name="browser" value="firefox" />
         <classes>
@@ -39,19 +52,20 @@
         </classes>
     </test>
 -->
-    <!-- Edge Test -->
-    <test name="Open Cart Home Page Test Edge">
-        <parameter name="browser" value="edge" />
-        <classes>
-            <class name="qa.opencart.tests.HomePageTest" />
-        </classes>
-    </test>
-    <!-- Edge Test -->
-    <test name="Open Cart Login Page Test Edge">
-        <parameter name="browser" value="edge" />
-        <classes>
-            <class name="qa.opencart.tests.LoginPageTest" />
-        </classes>
-    </test>
+	<!-- Edge Test -->
+	<test name="Open Cart Home Page Test Edge">
+		<parameter name="browser" value="edge" />
+		<classes>
+			<class name="qa.opencart.tests.HomePageTest" />
+		</classes>
+	</test>
+	<!-- Edge Test -->
+	<test name="Open Cart Login Page Test Edge">
+		<parameter name="browser" value="edge" />
+		<classes>
+			<class name="qa.opencart.tests.LoginPageTest" />
+		</classes>
+	</test>
 
 </suite> <!--Suite -->
+
