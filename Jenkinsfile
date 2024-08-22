@@ -12,7 +12,7 @@ pipeline
         {
             steps
             {
-                 git 'https://github.com/Rekapost/JenkinsPipeline/blob/main/Jenkinsfile'
+                 git 'https://github.com/Rekapost/JenkinsPipeline/blob/main/Jenkinsfile.git'
                  sh "mvn -Dmaven.test.failure.ignore=true clean package"
             }
             post 
